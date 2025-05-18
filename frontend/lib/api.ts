@@ -10,7 +10,7 @@ import {
 } from "@/types";
 import { isTokenExpired } from "./auth";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL;
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
 
 const api = axios.create({
   baseURL: API_URL,

@@ -3,6 +3,10 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import { loginUser } from "@/lib/api";
 import { decodeToken } from "@/lib/auth";
 
+if (!process.env.NEXTAUTH_SECRET || process.env.NEXTAUTH_SECRET.length < 32) {
+  console.warn("Warning: NEXTAUTH_SECRET is missing or too short. It should be at least 32 characters long for proper security.");
+}
+
 export const authOptions: AuthOptions = {
   providers: [
     CredentialsProvider({

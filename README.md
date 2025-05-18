@@ -181,6 +181,9 @@ docker-compose -f docker-compose.dev.yml up
 
 # Rebuild if needed
 docker-compose -f docker-compose.dev.yml up --build
+
+# Down Docker Compose
+docker-compose -f docker-compose.dev.yml down
 ```
 
 #### Production Environment
