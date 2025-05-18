@@ -176,20 +176,21 @@ docker-compose up -d --build frontend
 
 #### Development Environment
 ```bash
-# Development deployment
-docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d
+# Start development environment
+docker-compose -f docker-compose.dev.yml up
+
+# Rebuild if needed
+docker-compose -f docker-compose.dev.yml up --build
 ```
 
 #### Production Environment
 ```bash
-# Production deployment
-docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
-```
+# Create a .env file with your production settings first
+# Start production environment
+docker-compose -f docker-compose.prod.yml up -d
 
-#### Staging Environment
-```bash
-# Staging deployment
-docker-compose -f docker-compose.yml -f docker-compose.staging.yml up -d
+# Rebuild if needed
+docker-compose -f docker-compose.prod.yml up -d --build
 ```
 
 ### Deployment Best Practices
