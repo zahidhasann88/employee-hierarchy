@@ -1,6 +1,6 @@
-# Employee Hierarchy System
+# Team Subordinates System
 
-This project implements an employee hierarchy system with a NestJS backend API and a NextJS frontend application. The system allows users to view all employees under any given position in the company's organizational structure.
+This project implements a team subordinates system with a NestJS backend API and a NextJS frontend application. The system allows users to view all employees under any given position in the company's organizational structure.
 
 ## Table of Contents
 - [Features](#features)
@@ -23,9 +23,9 @@ This project implements an employee hierarchy system with a NestJS backend API a
 
 ## Features
 
-- **Employee Hierarchy API**: Retrieve all employees under a specific position
+- **Team subordinates API**: Retrieve all team members under a specific position
 - **JWT Authentication**: Secure API endpoints with JWT token authorization
-- **User-friendly Frontend**: Next.Js UI display employee hierarchy data
+- **User-friendly Frontend**: Next.js UI displays team members' data
 - **Swagger Documentation**: Interactive API documentation
 - **Rate Limiting**: Prevent abuse with request throttling
 - **Structured Logging**: JSON-formatted logs for better observability
